@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <meta name="description" content="Desafio 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body id="top" style="background-color: #c0c0c0; padding: 80px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <h1 style="color: #580505;">Página - Módulo I - Primeiros Passos com HTML</h1>
+    <hr style="border: 1px solid #580505"/>
+    <h2 style="color: #580505;">Menu</h2>
+    <p><u><strong>Temas</strong> abordados no módulo 1 da trilha de HTML</u></p>
+    <ul>
+      <li><a href="#history">História dos computadores</a></li>
+      <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+      <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+      <li><a href="#structure">Estrutura básica de um HTML</a></li>
+      <li><a href="#lists">Diferença entre listas ordenadas e não ordenadas</a></li>
+      <li><a href="#links">Links de referências</a></li>
+    </ul>
+
+  <h2 id="history" style="color: #580505;">História dos computadores</h2>
+  <h6 style="color: #580505;">1ª Geração (1951 - 1959)</h6>
+  <p>Funcionavam por meio de <mark><i>válvulas e circuitos eletrônicos</i>.</mark> Destacam-se o 
+    ENIAC e o Colossus. Eram computadores com dimensões gigantescas e que serviam
+  basicamente para a automatização de cálculos matemáticos</p>
+  <h5 style="color: #580505;">2ª Geração (1959 - 1965)</h5>
+  <p>Nesse período os computadores passaram a usar <mark><i>transistores</i></mark> em lugar de válvulas, 
+    o que tornou os computadores mais rápidos, e diminuiu um pouco do seu tamanho,
+  embora ainda fossem muito grandes. Nesse período já havia o uso comercial de
+computadores.
+</p>
+
+  <h4 style="color: #580505;">3ª Geração (1965 - 1975)</h4>
+  <p>Neste período os computadores passaram a utilizar <mark><i>circuitos integrados</i></mark> 
+    ao inves de transistores. Dessa forma passaram a ter um tamanho menor e uma 
+    capacidade de processamento maior. Neste período iniciou o uso de computadores
+    pessoais.</p>
+
+  <h3 style="color: #580505;">4ª Geração (1975 - até hoje)</h3>
+
+  <p>Com o uso de <mark><i>microchips</i></mark> os computadores diminuiram cada vez mais de tamanho e aumentaram suas velocidades
+    de armazenamento e processamento de dados, otimizando o consumo de energia.</p> 
+  <p> Na década de 90 houve uma expansão no uso de computadores pessoais. E com 
+    a virada do milênio começaram a se popularizar os notebooks. Em pouco tempo surgiram
+    os smartphones e tablets como conhecemos hoje.</p>
+  <p><del>Alguns estudiosos afirmam que a inteligência artificial, aliada a robótica, ao machine 
+    learning e a internet são a 5ª geração dos cumputadores, mmas não há um consenso.</del></p>
+  
+  <p><small>
+    Em 70 anos, os computadores passaram de equipamentos gigantescos que ocupavam 
+    salas inteiras (ENIAC/Colossus), pesavam toneladas e consumiam muita energia elétrica,
+    para equipamentos portáteis, que cabem num bolso e que em alguns casos pesam menos de 200g,
+    com baixo consumo de energia e  altíssima capacidade de processamento e armazenamento.
+  </small></p>
+  <hr style="border: 1px solid #580505"/>
+  <blockquote style="color: #580505;">“A web não está concluída, é apenas a ponta do iceberg. As novas mudanças irão balançar o mundo ainda mais.” - <small>Tim Berners Lee</small></blockquote>
+  <span style="text-align:center; display: block;"><img style="margin: auto; width: 200px; border:8px solid white" src="https://files.tecnoblog.net/wp-content/uploads/2017/03/tim-berners-lee.jpg" alt="Tim Berners Lee"></span>
+  <hr style="border: 1px solid #580505"/>
+  <a href="#top">Voltar ao menu</a>
+
+  <h2 id="clients" style="color: #580505;">O que são <i>Clients</i>?</h2>
+  <h3 style="color: #580505;"><i>Clients</i></h3>
+  <p>São <mark>programas que executam uma informação que foi recebida de um servidor.</mark> As informações
+    não ficam armazenadas nos Clients, estes apenas recebem as informações e exibem para o usuário.</p>
+  <p>Algumas poucas informações podem ficar armazenadas no Cache do Client, apenas para auxiliar na velocidade
+    de carregamento quando uma página for carregada novamente, porém essas informações estão armazenadas
+    de forma persistente num servidor. Esta cópia em cache serve apenas para que não seja necessário 
+    o Client baixar novamente informações que não sofretam mudanças.
+  </p>
+  <a href="#top">Voltar ao menu</a>
+
+  <h2 id="servers" style="color: #580505;">O que são <i>Servers</i>?</h2>
+  <h3 style="color: #580505;">Servers ou servidores </h3>
+  <p>São <mark>computadores nos quais informações ficam armazenadas</mark> para poderem serem consumidas 
+    por Clients.
+  </p>
+  <p>Existem diversos tipos de servidores, como por exemplo: de streaming, de arquivos, de  e-mail de proxy...
+    Esses servidores podem estar disponíveis na internet ou então limitados a uma Intranet.
+  </p>
+  <a href="#top">Voltar ao menu</a>
+
+  <h2 id="structure" style="color: #580505;">Estrutura básica de um HTML?</h2>
+  <h3 style="color: #580505;">A tag &lt;html&gt;&lt;html/&gt;:</h3>
+  <p>Serve para indicar que tudo o que está dentro dela consiste numa página quem contem marcações que 
+    o Client deve interpretar para exibir a <mark>estrutura do conteúdo</mark>.
+  </p>
+  <h3 style="color: #580505;">A tag &lt;head&gt;&lt;head/&gt;:</h3>
+  <p>Serve para incluir <mark>informações importantes a respeito da própria página</mark>, como autor, título da página,
+    desrição, palavras chave... Também é onde se inclui folhas de estilo externas e um dos locais onde se
+  carrega scripts</p>
+  </span>
+
+  <h3 style="color: #580505;">A tag &lt;body&gt;&lt;body/&gt;:</h3>
+  <p>É onde é montado o <mark>conteúdo visível da página.</mark> (Este texto está no body desta página). Tudo o que está
+    entre as tags body o Client interpreta como conteúdo a ser exibido.
+  </p>
+  <p><strong>Exemplo:</strong></p>
+  <pre>
+    &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;Exemplo trilha DIO&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;del&gt;A tag &lt;font&gt; não é mais utilizada.&lt;/del&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+  
+    <a href="exemplo.html">Clique para ver o exemplo</a>
+  </pre> 
+    
+
+  <a href="#top">Voltar ao menu</a>
+
+  <h2 id="lists" style="color: #580505;">Diferença entre listas ordenadas e não ordenadas</h2>
+  <h3 style="color: #580505;">Listas ordenadas</h3>
+  <p>Possuem numeração para indicar ordem. O primeiro item da lista é 1 e a cada novo 
+    item a numeração é acrescida em 1. Além disso, a lista ordenada utiliza a tag
+  <mark><sup>&lt;ol&gt;&lt;ol/&gt;</sup></mark> com as tags filhas <mark><sub>&lt;li&gt;&lt;li/&gt;</sub></mark></p>
+  <p><strong>Exemplo:</strong></p>
+  <pre>
+    &lt;ol&gt;
+        &lt;li&gt;item&lt;li/&gt;
+        &lt;li&gt;item&lt;li/&gt;
+        &lt;li&gt;item&lt;li/&gt;
+    &lt;ol/&gt;
+  </pre> 
+  <p><strong>Vai gerar:</strong></p>   
+  <ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+  </ol>  
+  <h3 style="color: #580505;">Listas não ordenadas</h3>
+  <p>Não possui numeração. Ao inves disso, utiliza bolas. A lista não ordenada
+    utiliza a tag <mark><sup>&lt;ul&gt;&lt;ul/&gt;</sup></mark> com as tags filhas <mark><sub>&lt;li&gt;&lt;li/&gt;</sub></mark>
+  </p>
+  <p><strong>Exemplo:</strong></p>
+  <pre>
+    &lt;ul&gt;
+        &lt;li&gt;item&lt;li/&gt;
+        &lt;li&gt;item&lt;li/&gt;
+        &lt;li&gt;item&lt;li/&gt;
+    &lt;ul/&gt;
+  </pre> 
+  <p><strong>Vai gerar:</strong></p>   
+  <ul>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+  </ul>  
+  <a href="#top">Voltar ao menu</a>
+
+  <h2 id="links" style="color: #580505;">Links de referências</h2>
+  <ul>
+    <li><a href="https://www.w3schools.com/tags/" target="_blank">w3schools</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"><abbr title="Mozilla Developer Network">Mdn Web Docs</abbr></a></li>
+    <li><a href="https://web.dio.me/track/formacao-html-web-developer" target="_blank">Dio</a></li>
+  </ul>
+  <a href="#top">Voltar ao menu</a>
+</body>
+</html>
