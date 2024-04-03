@@ -1,0 +1,110 @@
+html, body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: #b87947;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 1200px;
+  display: flex;
+  margin: 10px auto;
+  -webkit-box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  -moz-box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  border-radius: 10px;
+}
+.main {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  border-radius: 0 10px 10px 0;
+}
+.menu {
+  width: 10%;
+  padding: 10px 0px 0px 0px;
+  background-color:#F2EBD6;
+  border-radius: 10px 0 0 10px;
+}
+.menu > ul {
+  padding: 0;
+}
+.menu > ul li {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+}
+.menu > ul li a {
+  text-decoration: none;
+  font-size:14px;
+  color:brown; 
+  text-transform: uppercase;
+}
+.menu > ul li:hover {
+  background: #d2cec0;
+}
+.header {
+  min-height: 300px;
+  border-radius: 0 10px 0 0;
+}
+.home {
+  background-image: url("./img/home.jpg");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 0 10px 0 0;
+}
+.sobre {
+  background-image: url("./img/sobre.jpg");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 0 10px 0 0;
+}
+.horarios {
+  background-image: url("./img/horario.jpg");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 0 10px 0 0;
+}
+.contato {
+  background-image: url("./img/contato.jpg");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 0 10px 0 0;
+}
+.mask {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border-radius: 0 10px 0 0;
+}
+.mask h1{
+  border: 0;
+  padding: 0;
+  margin-block-start: 126px;
+  color: rgba(245, 245, 220, 0.5);
+}
+.content {
+  background-color: white;
+  min-height: 300px;
+  padding: 20px;
+  background-color: #f7f6eb;
+}
+.content p {
+  color: darkred;
+}
+.footer {
+  background-color: #F2EBD6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 11px;
+  color: brown;
+  border-radius: 0 0 10px 0;
+}
