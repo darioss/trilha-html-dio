@@ -3,6 +3,7 @@ html, body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
+  background-image: url("./img/bg.png");
   background-color: #b87947;
   display: flex;
   justify-content: center;
@@ -26,8 +27,10 @@ body {
 .menu {
   width: 10%;
   padding: 10px 0px 0px 0px;
-  background-color:#F2EBD6;
+  background-image: url("./img/bg_menu.png");
+  background-color:#F0EBD0;
   border-radius: 10px 0 0 10px;
+  border-right: 1px dashed #b87947;
 }
 .menu > ul {
   padding: 0;
@@ -93,13 +96,15 @@ body {
   background-color: white;
   min-height: 300px;
   padding: 20px;
-  background-color: #f7f6eb;
+  background-image: url("./img/bg_menu.png");
+  background-color:white;
 }
 .content p {
   color: darkred;
 }
 .footer {
-  background-color: #F2EBD6;
+  background-image: url("./img/bg_menu.png");
+  background-color:#F0EBD0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,4 +112,111 @@ body {
   font-size: 11px;
   color: brown;
   border-radius: 0 0 10px 0;
+  border-top: 1px dashed #b87947;
+}
+
+table {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  margin-top: 100px;
+  -webkit-box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  -moz-box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  border-radius: 10px;
+}
+
+table thead {
+  background: brown;
+  border: none;
+  font-size: 12px;
+  font-weight: bolder;
+  text-align: center;
+  color: #f7f6eb
+}
+
+table thead th{
+  padding: 3px;
+}
+
+table tbody td {
+  font-size: 12px;
+  border-bottom: 1px solid brown;
+}
+
+table tbody tr {
+  border-bottom: 1px solid brown;
+}
+fieldset {
+  width:50%;
+  margin: 0 auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding:0px 30px 40px 30px;
+  border: none;
+  background: white;
+  -webkit-box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  -moz-box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  border-radius:8px;
+  color: brown;
+}
+
+fieldset iframe {
+  border-radius: 10px;
+  border: none;
+}
+
+fieldset form label{
+  color: brown;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+fieldset form input {
+  width: 96%;
+  margin-bottom: 10px;
+  border: 1px solid brown;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: brown;
+}
+
+fieldset form button {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  float: inline-end;
+  background: white;
+  border: 1px solid brown;
+}
+
+fieldset form button:last-child{
+  margin-right: 10px;
+  background-color: brown;
+  color: white;
+}
+
+fieldset form button:hover {
+  background-color: rgb(194, 185, 185);
+  font-weight: bolder;
+  transition-duration: 0.5s;
+}
+
+fieldset form button:last-child:hover {
+  background-color: rgb(96, 25, 25);
+  transition-duration: 0.5s;
+}
+
+.imgContainer {
+  text-align: center;
+}
+
+.imgContainer img {
+  width:80%;
+  -webkit-box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  -moz-box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  box-shadow: -2px 4px 22px 4px rgb(129, 84, 33);
+  border-radius:8px;
 }
